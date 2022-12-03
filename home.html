@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="https://img.icons8.com/color/1600/f1-race-car-side-view.png">
+    <title>Мир автогонок</title>
+    <link rel="stylesheet" href="nav-footer.css">
+    <link rel="stylesheet" href="home.css">
+
+</head>
+
+<body>
+
+    <div>
+        <video autoplay muted loop id="background_video">
+            <source src="data/video/MidnightRace.webm" type="video/webm">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <header>
+
+        <nav id="top-menu">
+
+            <a href="home.html">
+                <img src="data/images/logo_tr.png" id="logo">
+            </a>
+
+            <div id="burger">
+                <span></span>
+
+            </div>
+
+            <ul id="menu-list">
+
+                <li class="dropdown">
+                    <a href="about.html">Все о гонках</a>
+
+                    <div class="menu-arrow">
+                        <span class="left_line"></span>
+                        <span class="right_line"></span>
+                    </div>
+
+                    <ul class="dropdown-content">
+                        <li><a href="koltsevye-gonki.html">Кольцевые гонки</a></li>
+                        <li><a href="rally.html">Ралли</a></li>
+                        <li><a href="avtocross.html">Автокросс</a></li>
+                        <li><a href="trophi.html">Трофи</a></li>
+                        <li><a href="avtotrial.html">Автотриал</a></li>
+                        <li><a href="street-racing.html">Стрит-рэйсинг</a></li>
+                        <li><a href="drag-racing.html">Дрэг-рэйсинг</a></li>
+                        <li><a href="drift.html">Дрифт</a></li>
+                        <li><a href="gonki-na-vyzhivanie.html">Гонки на выживание</a></li>
+                    </ul>
+                </li>
+                <li><a href="history.html">История автоспорта</a></li>
+                <li><a href="racers.html">Знаменитые пилоты</a></li>
+                <li><a href="gallery.html">Галерея</a></li>
+
+            </ul>
+
+            <script src="burger.js"></script>
+
+        </nav>
+
+    </header>
+
+</body>
+
+</html>

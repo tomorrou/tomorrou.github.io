@@ -1,0 +1,21 @@
+#background_video {
+	object-fit: cover;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	filter: brightness(0.5);
+	z-index: -1;
+}
+
+@media (min-width: 769px) {
+	/* HEADER */
+	#top-menu {
+		background-color: rgba(24, 25, 27, 0.767);
+	}
+}
+
+.dropdown:hover {
+	background-color: rgba(0, 0, 0, 0.795);
+}

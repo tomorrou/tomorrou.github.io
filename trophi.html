@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="https://img.icons8.com/color/1600/f1-race-car-side-view.png">
+    <title>Трофи</title>
+    <link rel="stylesheet" href="nav-footer.css">
+    <link rel="stylesheet" href="racing_type_articles.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <nav id="top-menu">
+
+            <a href="home.html">
+                <img src="data/images/logo.png" id="logo">
+            </a>
+
+            <div id="burger">
+                <span></span>
+
+            </div>
+
+            <ul id="menu-list">
+                <li class="dropdown">
+                    <a href="about.html" class="current">Все о гонках</a>
+
+                    <div class="menu-arrow">
+                        <span class="left_line"></span>
+                        <span class="right_line"></span>
+                    </div>
+
+                    <ul class="dropdown-content">
+                        <li><a href="koltsevye-gonki.html">Кольцевые гонки</a></li>
+                        <li><a href="rally.html">Ралли</a></li>
+                        <li><a href="avtocross.html">Автокросс</a></li>
+                        <li><a href="trophi.html" class="current">Трофи</a></li>
+                        <li><a href="avtotrial.html">Автотриал</a></li>
+                        <li><a href="street-racing.html">Стрит-рэйсинг</a></li>
+                        <li><a href="drag-racing.html">Дрэг-рэйсинг</a></li>
+                        <li><a href="drift.html">Дрифт</a></li>
+                        <li><a href="gonki-na-vyzhivanie.html">Гонки на выживание</a></li>
+                    </ul>
+                </li>
+                <li><a href="history.html">История автоспорта</a></li>
+                <li><a href="racers.html">Знаменитые пилоты</a></li>
+                <li><a href="gallery.html">Галерея</a></li>
+            </ul>
+
+            <script src="burger.js"></script>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <div class="content">
+
+            <div id="main_info">
+
+                <h1>Трофи</h1>
+                <p>
+                    Трофи-рейд — соревнование по преодолению бездорожья (болота, реки, бурелом, снежная целина, грязь),
+                    обычно на полноприводных автомобилях (внедорожниках), специальных внедорожных мотоциклах,
+                    квадроциклах.
+                </p>
+                <p>
+                    Пилоты трофи-рейдов не считают российские дороги бедой: когда Комитет РАФ выбирает трассу по
+                    принципу «чем хуже, тем лучше», вариантов у него хоть отбавляй. Это территория полного привода,
+                    высокого клиренса, грязевых колес и блокировок дифференциалов. Пилоты на подготовленных
+                    внедорожниках, мотоциклах и квадроциклах должны пройти полосу препятствий без опозданий, ошибок и
+                    поломок. Последнее условие выполнить непросто: на линейных и навигационных спецучастках вероятность
+                    аварий и вынужденных остановок превышает 146%, поэтому экипажи заранее обзаводятся лопатами,
+                    хайджеками, лебедками, тросами и бесстрашными штурманами, готовыми забираться по пояс в грязь. Трофи
+                    — один из немногих турниров, где принято помогать конкуренту: если он утонет в болоте, потому что ты
+                    проехал мимо, никакая победа этого не исправит.
+                </p>
+
+            </div>
+
+            <!-- Slideshow container -->
+            <div id="slideshow-container">
+
+                <!-- Full-width images with number and caption text -->
+
+                <div class="mySlides fade">
+                    <img src="data/images/trophi_1.jpeg" style="width:100%">
+                    <div class="text">
+                        Чемпионат России и Кубок России по трофи-рейдам 2019
+                    </div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="data/images/trophi_2.jpg" style="width:100%">
+                    <div class="text">
+                        Трофи-рейды на квадроциклах
+                    </div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="data/images/trophi_3.jpg" style="width:100%">
+                    <div class="text">
+                        Экстремальный автопробег «Байкал Трофи»
+                    </div>
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+
+            <!-- The dots/circles -->
+            <div id="slideshow-dots">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+
+        </div>
+        <script src="slideshow.js"></script>
+    </main>
+
+    <footer>
+
+        <div id="share-links">
+
+            <div class="link" id="vk">
+                <a href="http://vkontakte.ru/share.php?url=<?php echo urlencode($url); ?>&title=<?php echo $title; ?>&description=<?php echo $description; ?>&image=<?php echo $image_url; ?>&noparse=true"
+                    onclick="window.open(this.href, this.title, 'toolbar=0, status=0, width=548, height=325'); return false"
+                    target="_parent">
+                    <div class="vk"></div>
+                </a>
+
+                <div class="link_icon">
+                    <div class="circles"></div>
+                </div>
+
+                <div class="sign">Поделиться VK</div>
+
+            </div>
+
+            <div class="link" id="whatsapp">
+
+                <a href="whatsapp://send?text=GFG Example for whatsapp sharing" data-action="share/whatsapp/share"
+                    target="_blank">
+                </a>
+
+                <div class="link_icon">
+                    <div class="circles"></div>
+                </div>
+
+                <div class="sign">Поделиться WhatsApp</div>
+
+            </div>
+
+            <div class="link" id="tg">
+
+                <a
+                    href="https://telegram.me/share/url?url=file:///C:/Users/Worty/Desktop/%D0%A0%D0%9A%D0%A7%D0%98%D0%A0/%D0%A0%D0%9A%D0%A7%D0%98%D0%A0/Sport%20Racing/home.html&text=Интересуют автогонки?"></a>
+
+                <div class="link_icon">
+                    <div class="circles"></div>
+                </div>
+
+                <div class="sign">Поделиться Telegram</div>
+
+            </div>
+
+            <div class="link" id="reddit">
+
+                <a href="https://reddit.com/submit?url=&title="></a>
+
+                <div class="link_icon">
+                    <div class="circles"></div>
+                </div>
+
+                <div class="sign">Поделиться Reddit</div>
+
+            </div>
+
+        </div>
+
+        <div id="footer-menu">
+            <div>&#169; 2022</div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
