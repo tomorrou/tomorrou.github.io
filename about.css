@@ -22,6 +22,8 @@ main .content {
 h1 {
 	font-size: 3em;
 	font-weight: 900;
+	line-height: 1em;
+	text-align: center;
 }
 
 #main_info {
