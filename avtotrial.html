@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="https://img.icons8.com/color/1600/f1-race-car-side-view.png">
+    <title>Автотриал</title>
+    <link rel="stylesheet" href="nav-footer.css">
+    <link rel="stylesheet" href="racing_type_articles.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <nav id="top-menu">
+
+            <a href="index.html">
+                <img src="data/images/logo.png" id="logo">
+            </a>
+
+            <div id="burger">
+                <span></span>
+
+            </div>
+
+            <ul id="menu-list">
+                <li class="dropdown">
+                    <a href="about.html" class="current">Все о гонках</a>
+
+                    <div class="menu-arrow">
+                        <span class="left_line"></span>
+                        <span class="right_line"></span>
+                    </div>
+
+                    <ul class="dropdown-content">
+                        <li><a href="koltsevye-gonki.html">Кольцевые гонки</a></li>
+                        <li><a href="rally.html">Ралли</a></li>
+                        <li><a href="avtocross.html">Автокросс</a></li>
+                        <li><a href="trophi.html">Трофи</a></li>
+                        <li><a href="avtotrial.html" class="current">Автотриал</a></li>
+                        <li><a href="street-racing.html">Стрит-рэйсинг</a></li>
+                        <li><a href="drag-racing.html">Дрэг-рэйсинг</a></li>
+                        <li><a href="drift.html">Дрифт</a></li>
+                        <li><a href="gonki-na-vyzhivanie.html">Гонки на выживание</a></li>
+                    </ul>
+                </li>
+                <li><a href="history.html">История автоспорта</a></li>
+                <li><a href="racers.html">Знаменитые пилоты</a></li>
+                <li><a href="gallery.html">Галерея</a></li>
+            </ul>
+
+            <script src="burger.js"></script>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <div class="content">
+
+            <div id="main_info">
+
+                <h1>Авториал</h1>
+                <p>
+                    Триал - соревнования на преодоление почти непроходимых, очень коротких, часто специально
+                    подготовленных трасс. Особенно зрелищен трак-триал (соревнование монстр-траков).
+                </p>
+                <p>
+                    Monster Truck — автомобиль, чаще всего пикап, но бывают и с закрытом кузовом, измененный или
+                    специально построенный с очень большими колесами, подвеской с большим ходом и очень мощным
+                    двигателем. Такие автомобили создаются для участия в специальных соревнованиях — «Monster jam»-ах,
+                    включающих гонки по бездорожью, автотриал, прыжки через препятствия (обычно их сооружают из кузовов
+                    старых автомобилей) и различные акробатические номера.
+                </p>
+                <p>
+                    «Монстр-траки», смахивающие на гигантские игрушки, — яркий пример того, как народная забава
+                    превратилась во всемирно известное и невероятно зрелищное шоу-состязание с армией поклонников и
+                    астрономическим оборотом средств.
+                </p>
+                <p>
+                    Отсутствие инженерной рафинированности компенсируется безумными решениями и неискоренимым,
+                    стопроцентно американским максимализмом. Может показаться, что эти великаны размером с небольшой
+                    домик контролируются кем-то со стороны с помощью дистанционного радиоуправления, но это не так. Их
+                    пилотируют люди с титановыми нервами, свинцовой правой ногой и интегрированной в мозг системой
+                    кругового обзора. Времяпровождение вверх ногами и вызов законам физики — что может быть веселее?
+                </p>
+
+            </div>
+
+            <!-- Slideshow container -->
+            <div id="slideshow-container">
+
+                <!-- Full-width images with number and caption text -->
+
+                <div class="mySlides fade">
+                    <img src="data/images/avtotrial_1.jpg" style="width:100%">
+                    <div class="text">
+                        Monster Jam 2018
+                    </div>
+                </div>
+                <div class="mySlides fade">
+                    <img src="data/images/avtotrial_2.jpg" style="width:100%">
+                    <div class="text">
+                        Monster Jam 2018
+                    </div>
+                </div>
+                <div class="mySlides fade">
+                    <img src="data/images/avtotrial_3.jpg" style="width:100%">
+                    <div class="text">
+                        Hot Wheels Monster Trucks live show
+                    </div>
+                </div>
+
+
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+
+            <!-- The dots/circles -->
+            <div id="slideshow-dots">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+
+        </div>
+        <script src="slideshow.js"></script>
+    </main>
+
+    <footer>
+
+        <div id="share-links">
+
+            <div class="link" id="vk">
+                <a href="http://vkontakte.ru/share.php?url=<?php echo urlencode($url); ?>&title=<?php echo $title; ?>&description=<?php echo $description; ?>&image=<?php echo $image_url; ?>&noparse=true"
+                    onclick="window.open(this.href, this.title, 'toolbar=0, status=0, width=548, height=325'); return false"
+                    target="_parent">
+                    <div class="vk"></div>
+                </a>
+
+                <div class="link_icon">
+                    <div class="circles"></div>
+                </div>
+
+                <div class="sign">Поделиться VK</div>
+
+            </div>
+
+            <div class="link" id="whatsapp">
+
+                <a href="whatsapp://send?text=GFG Example for whatsapp sharing" data-action="share/whatsapp/share"
+                    target="_blank">
+                </a>
+
+                <div class="link_icon">
+                    <div class="circles"></div>
+                </div>
+
+                <div class="sign">Поделиться WhatsApp</div>
+
+            </div>
+
+            <div class="link" id="tg">
+
+                <a
+                    href="https://telegram.me/share/url?url=file:///C:/Users/Worty/Desktop/%D0%A0%D0%9A%D0%A7%D0%98%D0%A0/%D0%A0%D0%9A%D0%A7%D0%98%D0%A0/Sport%20Racing/home.html&text=Интересуют автогонки?"></a>
+
+                <div class="link_icon">
+                    <div class="circles"></div>
+                </div>
+
+                <div class="sign">Поделиться Telegram</div>
+
+            </div>
+
+            <div class="link" id="reddit">
+
+                <a href="https://reddit.com/submit?url=&title="></a>
+
+                <div class="link_icon">
+                    <div class="circles"></div>
+                </div>
+
+                <div class="sign">Поделиться Reddit</div>
+
+            </div>
+
+        </div>
+
+        <div id="footer-menu">
+            <div>&#169; 2022</div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
