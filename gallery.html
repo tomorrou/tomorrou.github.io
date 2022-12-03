@@ -6,30 +6,149 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="https://img.icons8.com/color/1600/f1-race-car-side-view.png">
-    <title>Мир автогонок</title>
+    <title>Галерея</title>
     <link rel="stylesheet" href="gallery.css">
-    <link rel="stylesheet" href="top-menu.css">
+    <link rel="stylesheet" href="nav-footer.css">
 </head>
 
 <body>
+
     <header>
 
         <nav id="top-menu">
 
-            <a href="home.html">
+            <a href="index.html">
                 <img src="data/images/logo.png" id="logo">
             </a>
 
-            <ul>
-                <li><a href="about.html">Все о гонках</a></li>
+            <div id="burger">
+                <span></span>
+
+            </div>
+
+            <ul id="menu-list">
+                <li class="dropdown">
+                    <a href="about.html">Все о гонках</a>
+
+                    <div class="menu-arrow">
+                        <span class="left_line"></span>
+                        <span class="right_line"></span>
+                    </div>
+
+                    <ul class="dropdown-content">
+                        <li><a href="koltsevye-gonki.html">Кольцевые гонки</a></li>
+                        <li><a href="rally.html">Ралли</a></li>
+                        <li><a href="avtocross.html">Автокросс</a></li>
+                        <li><a href="trophi.html">Трофи</a></li>
+                        <li><a href="avtotrial.html">Автотриал</a></li>
+                        <li><a href="street-racing.html">Стрит-рэйсинг</a></li>
+                        <li><a href="drag-racing.html">Дрэг-рэйсинг</a></li>
+                        <li><a href="drift.html">Дрифт</a></li>
+                        <li><a href="gonki-na-vyzhivanie.html">Гонки на выживание</a></li>
+                    </ul>
+                </li>
                 <li><a href="history.html">История автоспорта</a></li>
                 <li><a href="racers.html">Знаменитые пилоты</a></li>
-                <li><a href="gallery.html" id="current">Галерея</a></li>
+                <li><a href="gallery.html" class="current">Галерея</a></li>
             </ul>
+
+            <script src="burger.js"></script>
 
         </nav>
 
     </header>
+
+    <main>
+
+        <h1>Ещё больше автомобилей!</h1>
+
+        <div class="grid">
+            <img src="data/images/gallery_11.jpg">
+            <img src="data/images/gallery_9.jpg">
+            <img src="data/images/gallery_10.webp">
+            <img src="data/images/gallery_3.jpg">
+            <img src="data/images/gallery_6.jpg">
+            <img src="data/images/gallery_5.jpg">
+            <img src="data/images/gallery_8.jpg">
+            <img src="data/images/gallery_1.jpg">
+            <img src="data/images/gallery_7.jpg">
+            <img src="data/images/gallery_12.jpg">
+            <img src="data/images/gallery_2.jpg">
+            <img src="data/images/gallery_4.jpg">
+            <img src="data/images/gallery_16.jpg">
+            <img src="data/images/gallery_13.jpg">
+            <img src="data/images/gallery_14.jpg">
+            <img src="data/images/gallery_15.webp">
+            <img src="data/images/gallery_17.png">
+
+        </div>
+    </main>
+
+    <footer>
+
+        <div id="share-links">
+
+            <div class="link" id="vk">
+                <a href="http://vkontakte.ru/share.php?url=<?php echo urlencode($url); ?>&title=<?php echo $title; ?>&description=<?php echo $description; ?>&image=<?php echo $image_url; ?>&noparse=true"
+                    onclick="window.open(this.href, this.title, 'toolbar=0, status=0, width=548, height=325'); return false"
+                    target="_parent">
+                    <div class="vk"></div>
+                </a>
+
+                <div class="link_icon">
+                    <div class="circles"></div>
+                </div>
+
+                <div class="sign">Поделиться VK</div>
+
+            </div>
+
+            <div class="link" id="whatsapp">
+
+                <a href="whatsapp://send?text=GFG Example for whatsapp sharing" data-action="share/whatsapp/share"
+                    target="_blank">
+                </a>
+
+                <div class="link_icon">
+                    <div class="circles"></div>
+                </div>
+
+                <div class="sign">Поделиться WhatsApp</div>
+
+            </div>
+
+            <div class="link" id="tg">
+
+                <a
+                    href="https://telegram.me/share/url?url=file:///C:/Users/Worty/Desktop/%D0%A0%D0%9A%D0%A7%D0%98%D0%A0/%D0%A0%D0%9A%D0%A7%D0%98%D0%A0/Sport%20Racing/home.html&text=Интересуют автогонки?"></a>
+
+                <div class="link_icon">
+                    <div class="circles"></div>
+                </div>
+
+                <div class="sign">Поделиться Telegram</div>
+
+            </div>
+
+            <div class="link" id="reddit">
+
+                <a href="https://reddit.com/submit?url=&title="></a>
+
+                <div class="link_icon">
+                    <div class="circles"></div>
+                </div>
+
+                <div class="sign">Поделиться Reddit</div>
+
+            </div>
+
+        </div>
+
+        <div id="footer-menu">
+            <div>&#169; 2022</div>
+        </div>
+    </footer>
+
 </body>
 
 </html>

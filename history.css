@@ -15,15 +15,16 @@ main {
 }
 
 h1 {
-	font-style: italic;
+	font-size: 3em;
+	font-weight: 900;
 }
 
 main .content {
 	margin-top: 5em;
 }
 
-#main_info {    
-    display: flex;
+#main_info {
+	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
@@ -33,35 +34,36 @@ main .content {
 	margin-bottom: 80px;
 }
 
-#main_info .img_container{
-    display: flex;
+#main_info .img_container {
+	display: flex;
 	justify-content: center;
 	align-items: center;
-    position: relative;
-    margin: 3em 0;
-    transition: 0.2s ease-in;
+	position: relative;
+	margin: 3em 0;
+	transition: all 0.2s ease-in;
 }
 
-#main_info .img_container img{
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    transition: inherit;
+#main_info .img_container img {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+	transition: inherit;
 }
 
-#main_info .img_container p{
-    opacity: 0;
-    position: absolute;
-    margin:0;
-    transition: inherit;
+#main_info .img_container p {
+	opacity: 0;
+	position: absolute;
+	margin: 0;
+	padding: 0 6em;
+	transition: inherit;
 }
 
-#main_info .img_container:hover img{
-    filter: brightness(0.1);
+#main_info .img_container:hover img {
+	filter: brightness(0.3) blur(2px);
 }
 
-#main_info .img_container:hover p{
-    opacity:1;
+#main_info .img_container:hover p {
+	opacity: 1;
 }
 
 @media (max-width: 1049px) {
@@ -70,9 +72,9 @@ main .content {
 		margin-right: 2em;
 	}
 
-    #main_info .img_container{
-        width: 80%;
-    } 
+	#main_info .img_container {
+		width: 80%;
+	}
 }
 
 @media (min-width: 1050px) {
@@ -80,7 +82,7 @@ main .content {
 		width: 1000px;
 	}
 
-    #main_info .img_container{
-        width: 80%;
-    }
+	#main_info .img_container {
+		width: 80%;
+	}
 }

@@ -15,7 +15,8 @@ main {
 }
 
 h1 {
-	font-style: italic;
+	font-size: 3em;
+	font-weight: 900;
 }
 
 main .content {
@@ -70,6 +71,7 @@ main .content {
 	main .content {
 		width: 1500px;
 	}
+
 	#slideshow-container {
 		height: 800px;
 	}
@@ -169,6 +171,7 @@ main .content {
 	from {
 		opacity: .4;
 	}
+
 	to {
 		opacity: 1;
 	}
@@ -178,6 +181,7 @@ main .content {
 	from {
 		opacity: .4;
 	}
+
 	to {
 		opacity: 1;
 	}
