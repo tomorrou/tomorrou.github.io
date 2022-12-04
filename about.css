@@ -80,11 +80,27 @@ h1 {
 }
 
 @media (max-width: 999px) {
+	#main_info {
+		font-size: 1.5em;
+	}
+
+	h1 {
+		text-align: center;
+	}
+
 	main .content {
 		max-width: 80%;
 		font-size: 0.8em;
 		margin-left: 2em;
 		margin-right: 2em;
+	}
+
+	#racing_types .type_description {
+		font-size: 1.5em;
+	}
+
+	#racing_types .type_description h2 {
+		text-align: center;
 	}
 
 	#racing_types .type_image {

@@ -106,14 +106,24 @@ aside a:active {
 }
 
 @media (max-width: 1049px) {
+
+    #main_info {
+        font-size: 1.5em;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    #main_info .img_container {
+        width: 100%;
+    }
+
     main .content {
         margin-left: 2em;
         margin-right: 2em;
     }
 
-    #main_info .img_container {
-        width: 80%;
-    }
 }
 
 @media (min-width: 1050px) {
