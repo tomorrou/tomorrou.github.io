@@ -90,6 +90,13 @@ main .content {
 		width: 100%;
 	}
 
+	#main_info .img_container:hover p {
+		display: none;
+	}
+
+	#main_info .img_container:hover img {
+		filter: none;
+	}
 }
 
 @media (min-width: 1050px) {

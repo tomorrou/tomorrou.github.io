@@ -13,7 +13,7 @@ body {
 /* HEADER */
 #top-menu {
 	position: fixed;
-	width: 100%;
+	width: 100vw;
 	height: 50px;
 	top: 0;
 	left: 0;
